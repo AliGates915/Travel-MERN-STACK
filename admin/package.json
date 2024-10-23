@@ -53,5 +53,5 @@
     ]
   }, 
   
-  "proxy": "https://traveling-tour-backend.vercel.app/api"
+  "proxy": "https://travel-mern-backend.vercel.app/api"
 }

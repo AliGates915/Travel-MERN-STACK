@@ -16,7 +16,6 @@ import cors from 'cors';
 const app = express();
 dotenv.config();
 const isProduction = process.env.NODE_ENV === 'production';
-// Middleware
 app.use(cors({
   //  http://localhost:3000
   origin: isProduction ? 'https://travel-tour-admin-livid.vercel.app' : 'http://localhost:3000',

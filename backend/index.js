@@ -18,7 +18,8 @@ dotenv.config();
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow your frontend origin
+  //  http://localhost:3000
+  origin: 'https://travel-tour-admin-livid.vercel.app', // Allow your frontend origin
   credentials: true, // Allow credentials
 }));
 

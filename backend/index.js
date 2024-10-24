@@ -15,10 +15,10 @@ import cors from 'cors';
 
 const app = express();
 dotenv.config();
-const isProduction = process.env.NODE_ENV === 'production';
+
 app.use(cors({
   //  http://localhost:3000
-  origin: isProduction ? 'https://travel-tour-admin-livid.vercel.app' : 'http://localhost:3000',
+  origin: 'http://localhost:3000',
   // origin: 'https://travel-tour-admin-livid.vercel.app', // Allow your frontend origin
   methods: ['POST', 'GET', 'PUT', 'DELETE'],
   credentials: true, // Allow credentials

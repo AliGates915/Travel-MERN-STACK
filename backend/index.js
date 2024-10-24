@@ -27,15 +27,15 @@ app.use(cors({
 app.use(express.json());
 app.use(cookieParser());
 
-app.use('/auth', authRouter);
-app.use('/hotels', hotelRouter);
-app.use('/rooms', roomRouter);
-app.use('/users', userRouter);
-app.use("/tours", tourTypeRoutes);
-app.use("/facility", facilityRoutes);
-app.use("/destination", destinationRoutes);
-app.use("/packages", packageRoutes);
-app.use("/packageList", packageListRoutes);
+app.use('/api/auth', authRouter);
+app.use('/api/hotels', hotelRouter);
+app.use('/api/rooms', roomRouter);
+app.use('/api/users', userRouter);
+app.use("/api/tours", tourTypeRoutes);
+app.use("/api/facility", facilityRoutes);
+app.use("/api/destination", destinationRoutes);
+app.use("/api/packages", packageRoutes);
+app.use("/api/packageList", packageListRoutes);
 
 // Root route for testing
 app.get('/', (req, res) => {

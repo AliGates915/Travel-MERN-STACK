@@ -7,6 +7,6 @@
     }
   ],
   "routes": [
-    { "src": "/auth/login", "dest": "index.js" }
+    { "src": "/auth/login", "dest": "/auth/login" }
   ]
 }
